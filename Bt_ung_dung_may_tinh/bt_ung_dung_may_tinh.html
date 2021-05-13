@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập ứng dụng máy tính</title>
+
+</head>
+<body>
+<h2>Calculator</h2>
+<table>
+    <tr>
+        <td colspan="2"><input  type="number" id="so1"></td>
+        <td colspan="2"><input  type="number" id="so2"></td>
+    </tr>
+    <tr>
+        <td><button onclick="cong();">Addition(+)</button></td>
+        <td><button onclick="tru();">Subtraction(-)</button></td>
+        <td><button onclick="nhan();">Multiplication(X)</button></td>
+        <td><button onclick="chia();">Division(/)</button></td>
+    </tr>
+</table>
+</body>
+<script>
+
+    function cong(){
+        let a = document.getElementById('so1').value;
+        b = document.getElementById('so2').value;
+        let d = parseInt(a);
+        g = parseInt(b);
+        let c = (d+g);
+        alert(c);
+    }
+    function tru(){
+        let a = document.getElementById('so1').value;
+        b = document.getElementById('so2').value;
+        let d = parseInt(a);
+        g = parseInt(b);
+       let c = (d-g);
+        alert(c);
+    }
+    function nhan(){
+        let a = document.getElementById('so1').value;
+        b = document.getElementById('so2').value;
+        let d = parseInt(a);
+        g = parseInt(b);
+        let c = (d*g);
+        alert(c);
+    }
+    function chia(){
+        let a = document.getElementById('so1').value;
+        b = document.getElementById('so2').value;
+        let d = parseInt(a);
+        g = parseInt(b);
+        let c = (d/g);
+        alert(c);
+    }
+
+</script>
+</html>
